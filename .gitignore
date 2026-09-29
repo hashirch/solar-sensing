@@ -5,7 +5,7 @@ venv/
 
 # Large datasets & raw data downloads (too large for GitHub)
 solar-panel-exports/
-Dataset/
+Dataset/solar-panels-COCO/
 *.zip
 *.tar.gz
 
