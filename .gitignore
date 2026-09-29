@@ -5,11 +5,13 @@ venv/
 
 # Large datasets & raw data downloads (too large for GitHub)
 solar-panel-exports/
+Dataset/
 *.zip
 *.tar.gz
 
 # Training outputs & checkpoints
 runs/
+Training results/
 *.pt
 *.pth
 *.onnx
