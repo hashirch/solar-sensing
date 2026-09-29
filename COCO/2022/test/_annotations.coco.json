@@ -1,0 +1,241 @@
+{
+  "info": {
+    "year": "2026",
+    "version": "1",
+    "description": "Exported from roboflow.com",
+    "contributor": "",
+    "url": "https://public.roboflow.com/object-detection/undefined",
+    "date_created": "2026-09-11T18:37:27+00:00"
+  },
+  "licenses": [
+    {
+      "id": 1,
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "CC BY 4.0"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "solar-panels",
+      "supercategory": "none"
+    },
+    {
+      "id": 1,
+      "name": "solar_panel",
+      "supercategory": "solar-panels"
+    }
+  ],
+  "images": [
+    {
+      "id": 10,
+      "license": 1,
+      "file_name": "images/patch7_Base2_2022_jpg.rf.82c0ae3198e99838d2f7cb5b19ec9955.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch7_Base2_2022.jpg"
+      }
+    },
+    {
+      "id": 14,
+      "license": 1,
+      "file_name": "images/patch12_Base7_2022_jpg.rf.95f6e54211c2e58926c1c1ae80387df8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch12_Base7_2022.jpg"
+      }
+    },
+    {
+      "id": 18,
+      "license": 1,
+      "file_name": "images/patch6_Base7_2022_jpg.rf.7d9734efef863466c38da0d91bdda4ef.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch6_Base7_2022.jpg"
+      }
+    },
+    {
+      "id": 20,
+      "license": 1,
+      "file_name": "images/patch6_Base11_2022_jpg.rf.0f43838e02b88c93042e7d8a25dc6023.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch6_Base11_2022.jpg"
+      }
+    },
+    {
+      "id": 27,
+      "license": 1,
+      "file_name": "images/patch16_Base6_2022_jpg.rf.50e8660cff088e6f587e940266e82921.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch16_Base6_2022.jpg"
+      }
+    },
+    {
+      "id": 31,
+      "license": 1,
+      "file_name": "images/patch6_Base8_2022_jpg.rf.68385126f7ba5876b05a4b4fef5f7ec4.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch6_Base8_2022.jpg"
+      }
+    },
+    {
+      "id": 45,
+      "license": 1,
+      "file_name": "images/patch4_Base9_2022_jpg.rf.4566c83dc453d4c084ba5b17e9ea664a.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch4_Base9_2022.jpg"
+      }
+    },
+    {
+      "id": 47,
+      "license": 1,
+      "file_name": "images/patch1_Base12_2022_jpg.rf.3005e619e98807952b234f98a436021e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch1_Base12_2022.jpg"
+      }
+    },
+    {
+      "id": 78,
+      "license": 1,
+      "file_name": "images/patch1_Base4_2022_jpg.rf.309b1e6ef8c026f714b2d77d9442bfec.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch1_Base4_2022.jpg"
+      }
+    },
+    {
+      "id": 82,
+      "license": 1,
+      "file_name": "images/patch15_Base5_2022_jpg.rf.284c6191037dd6f92ff7bb35fb48f9c0.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch15_Base5_2022.jpg"
+      }
+    },
+    {
+      "id": 95,
+      "license": 1,
+      "file_name": "images/patch15_Base12_2022_jpg.rf.a57f2afe8cd9d4e462fb3ec0e8b45fa5.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch15_Base12_2022.jpg"
+      }
+    },
+    {
+      "id": 99,
+      "license": 1,
+      "file_name": "images/patch4_Base4_2022_jpg.rf.c3c1bf9cbd3155383caff92f69b9ca01.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch4_Base4_2022.jpg"
+      }
+    },
+    {
+      "id": 104,
+      "license": 1,
+      "file_name": "images/patch12_Base1_2022_jpg.rf.2cd05e92a0ae9cf4233c8d00af474c57.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch12_Base1_2022.jpg"
+      }
+    },
+    {
+      "id": 105,
+      "license": 1,
+      "file_name": "images/patch11_Base11_2022_jpg.rf.439a63aaec62382d68697ffefe553d20.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch11_Base11_2022.jpg"
+      }
+    },
+    {
+      "id": 106,
+      "license": 1,
+      "file_name": "images/patch4_Base3_2022_jpg.rf.99a79ae40f941cb8b5fdffb57790a56f.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch4_Base3_2022.jpg"
+      }
+    },
+    {
+      "id": 111,
+      "license": 1,
+      "file_name": "images/patch9_Base11_2022_jpg.rf.813d22107d0ecab653e552c020869b35.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch9_Base11_2022.jpg"
+      }
+    },
+    {
+      "id": 119,
+      "license": 1,
+      "file_name": "images/patch1_Base8_2022_jpg.rf.94b0b13d05ab0f7378c6b2fd0aae4ff8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch1_Base8_2022.jpg"
+      }
+    },
+    {
+      "id": 121,
+      "license": 1,
+      "file_name": "images/patch17_Base7_2022_jpg.rf.e9edd617c1bb8c9dff16b386700b5526.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch17_Base7_2022.jpg"
+      }
+    },
+    {
+      "id": 123,
+      "license": 1,
+      "file_name": "images/patch16_Base9_2022_jpg.rf.78baadd5475ee7b7058fe62596910e4a.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:28+00:00",
+      "extra": {
+        "name": "patch16_Base9_2022.jpg"
+      }
+    }
+  ],
+  "annotations": []
+}

@@ -1,0 +1,21 @@
+path: .
+train:
+  - 2021/train/images
+  - 2022/train/images
+  - 2023/train/images
+  - 2024/train/images
+  - 2025/train/images
+val:
+  - 2021/valid/images
+  - 2022/valid/images
+  - 2023/valid/images
+  - 2024/valid/images
+  - 2025/valid/images
+test:
+  - 2021/test/images
+  - 2022/test/images
+  - 2023/test/images
+  - 2024/test/images
+  - 2025/test/images
+names:
+  0: solar_panel
