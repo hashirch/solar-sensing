@@ -4,7 +4,6 @@ import re
 import shutil
 from pathlib import Path
 
-from roboflow import Roboflow
 
 WORKSPACE = "hashir-auqmy"
 MODEL = "solar-panel-segmentation-sj9ak"
@@ -16,7 +15,24 @@ staging = root / "_downloads"
 coco_out = root / "COCO"
 yolo_out = root / "YOLO"
 
-rf = Roboflow(api_key=os.environ["ROBOFLOW_API_KEY"])
+import subprocess
+
+GITHUB_REPO = "https://github.com/Hinarashid220/FYP.git"
+
+# If ROBOFLOW_API_KEY is not set, download directly from GitHub repo
+api_key = os.environ.get("ROBOFLOW_API_KEY")
+if not api_key:
+    print(f"ROBOFLOW_API_KEY not found. Fetching dataset directly from GitHub: {GITHUB_REPO}")
+    dest = Path("FYP")
+    if not dest.exists() and not Path("Dataset/COCO").exists():
+        subprocess.run(["git", "clone", GITHUB_REPO], check=True)
+        print("Cloned repository successfully into ./FYP")
+    else:
+        print("Dataset already available locally.")
+    exit(0)
+
+    from roboflow import Roboflow
+    rf = Roboflow(api_key=api_key)
 version = rf.workspace(WORKSPACE).project(MODEL).version(VERSION)
 
 # Download both segmentation formats.
