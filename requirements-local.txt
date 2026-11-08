@@ -1,0 +1,6 @@
+albumentations
+opencv-python
+pyyaml
+segmentation-models-pytorch
+streamlit
+tqdm

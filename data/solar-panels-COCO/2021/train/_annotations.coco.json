@@ -1,0 +1,2297 @@
+{
+  "info": {
+    "year": "2026",
+    "version": "1",
+    "description": "Exported from roboflow.com",
+    "contributor": "",
+    "url": "https://public.roboflow.com/object-detection/undefined",
+    "date_created": "2026-09-11T18:37:27+00:00"
+  },
+  "licenses": [
+    {
+      "id": 1,
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "CC BY 4.0"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "solar-panels",
+      "supercategory": "none"
+    },
+    {
+      "id": 1,
+      "name": "solar_panel",
+      "supercategory": "solar-panels"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "license": 1,
+      "file_name": "images/patch14_Base15_2021_jpg.rf.3a864033bdf0acd165824c40aba2e043.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "license": 1,
+      "file_name": "images/patch15_Base13_2021_jpg.rf.a7a599cec7ca2d962589c87572d1dfed.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 12,
+      "license": 1,
+      "file_name": "images/patch5_Base10_2021_jpg.rf.eb9c3c46cf2ba10f41f3db27e76fe2b3.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 17,
+      "license": 1,
+      "file_name": "images/patch7_Base15_2021_jpg.rf.b45b83e41c22bb55b0b09cf51fe17a87.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 28,
+      "license": 1,
+      "file_name": "images/patch5_Base2_2021_jpg.rf.8c9074af45a2faad6684548c709a2db7.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 47,
+      "license": 1,
+      "file_name": "images/patch8_Base1_2021_jpg.rf.967e2e8ff697842fd01782ab40c33494.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 48,
+      "license": 1,
+      "file_name": "images/patch9_Base1_2021_jpg.rf.ac30ea906deb1f3dd02f1b2ef9da5fcc.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 49,
+      "license": 1,
+      "file_name": "images/patch2_Base13_2021_jpg.rf.5a13f7fd19b0a227a4a39eabe8b2fe23.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 59,
+      "license": 1,
+      "file_name": "images/patch5_Base15_2021_jpg.rf.217f024f4b23b8bffd016ecb704f4ece.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 70,
+      "license": 1,
+      "file_name": "images/patch14_Base9_2021_jpg.rf.e35f2344f08347b181a54a1f2c336fdb.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 71,
+      "license": 1,
+      "file_name": "images/patch11_Base13_2021_jpg.rf.c600dea8388f7fb0217b06e402d2dee9.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 88,
+      "license": 1,
+      "file_name": "images/patch3_Base9_2021_jpg.rf.d7f097997672bb0b6388b9d261fd0359.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 92,
+      "license": 1,
+      "file_name": "images/patch7_Base2_2021_jpg.rf.caf89f7fc4ce30ee2af837cfc640c926.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 93,
+      "license": 1,
+      "file_name": "images/patch12_Base7_2021_jpg.rf.fb952ddb53954f6918a180363f0c714d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 95,
+      "license": 1,
+      "file_name": "images/patch14_Base2_2021_jpg.rf.0422212aee0002dc3b91590cba3fede9.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 97,
+      "license": 1,
+      "file_name": "images/patch1_Base6_2021_jpg.rf.54b977dc58ce63d0c1b8fee835ec03e8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 100,
+      "license": 1,
+      "file_name": "images/patch4_Base11_2021_jpg.rf.fd1595d23d1321361f7713dab79d0c05.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 108,
+      "license": 1,
+      "file_name": "images/patch11_Base3_2021_jpg.rf.4e048be721d95038aacc8ac6b39adeff.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 127,
+      "license": 1,
+      "file_name": "images/patch2_Base4_2021_jpg.rf.d57b3abbae5bf36cb68ef3dce17b0521.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 136,
+      "license": 1,
+      "file_name": "images/patch6_Base9_2021_jpg.rf.ac2662d4cbfbb317c79e0b1fb6024c82.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 144,
+      "license": 1,
+      "file_name": "images/patch15_Base14_2021_jpg.rf.c3c3426aea87a6ad7acdfe79723f22d9.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 156,
+      "license": 1,
+      "file_name": "images/patch15_Base4_2021_jpg.rf.38203eb45c85308d9ec4b4e6f2bc574b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 163,
+      "license": 1,
+      "file_name": "images/patch2_Base5_2021_jpg.rf.ae21ef47666b9e80c6291bccf28d5a8e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 164,
+      "license": 1,
+      "file_name": "images/patch13_Base1_2021_jpg.rf.d443c7ab898edecef519e5a61b72ff7e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 170,
+      "license": 1,
+      "file_name": "images/patch10_Base9_2021_jpg.rf.c5c0e1bb1caa6cfe4cf350e4cffde848.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 177,
+      "license": 1,
+      "file_name": "images/patch12_Base8_2021_jpg.rf.6ffcc71119b5c0c092c726f37e0fb017.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 180,
+      "license": 1,
+      "file_name": "images/patch11_Base14_2021_jpg.rf.373611901fb3f8ab6c1102113bbc3170.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 182,
+      "license": 1,
+      "file_name": "images/patch4_Base12_2021_jpg.rf.849cb8a093aec5a4e0043191ba41c638.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 187,
+      "license": 1,
+      "file_name": "images/patch3_Base5_2021_jpg.rf.a1b39a1c12c46db50ec6310a0170a531.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 198,
+      "license": 1,
+      "file_name": "images/patch5_Base13_2021_jpg.rf.5acae895d39669b7de63eb7dc945f7a4.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 207,
+      "license": 1,
+      "file_name": "images/patch4_Base8_2021_jpg.rf.1077564ca12172c0cc5265fce347ccb4.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 208,
+      "license": 1,
+      "file_name": "images/patch6_Base2_2021_jpg.rf.c82f09daf092c5c6d25c8990112ca55a.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 211,
+      "license": 1,
+      "file_name": "images/patch4_Base9_2021_jpg.rf.138cc7f039fb021cd6313e494dd99197.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 214,
+      "license": 1,
+      "file_name": "images/patch8_Base10_2021_jpg.rf.376cbe46893f08f07731636e70cb71b1.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 220,
+      "license": 1,
+      "file_name": "images/patch10_Base6_2021_jpg.rf.f75d4a4f3de018b023743f96ebe7d282.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 227,
+      "license": 1,
+      "file_name": "images/patch16_Base13_2021_jpg.rf.0a22baf72e27dafd86cf7f56df05bbce.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 234,
+      "license": 1,
+      "file_name": "images/patch6_Base6_2021_jpg.rf.1e08f099a13157c994c04304ffe014d8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 236,
+      "license": 1,
+      "file_name": "images/patch1_Base8_2021_jpg.rf.f240499254273a09ce8bf95a528e6cd0.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 239,
+      "license": 1,
+      "file_name": "images/patch3_Base14_2021_jpg.rf.7013520a31ece2bfe13c26676862df7c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 243,
+      "license": 1,
+      "file_name": "images/patch7_Base13_2021_jpg.rf.2284240d9c34f679fb48c6d87cefb4af.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 248,
+      "license": 1,
+      "file_name": "images/patch2_Base10_2021_jpg.rf.d3ca67d5e520a1e8b585a1e238cc14f4.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 251,
+      "license": 1,
+      "file_name": "images/patch14_Base11_2021_jpg.rf.dea461c9c534cb7c1d3a6e7b10348457.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 257,
+      "license": 1,
+      "file_name": "images/patch7_Base10_2021_jpg.rf.39d91b202aa6b8d71fe126d7ff0e0f3e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 267,
+      "license": 1,
+      "file_name": "images/patch11_Base8_2021_jpg.rf.4a2e36714793dd258c86cc92eabf630f.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 268,
+      "license": 1,
+      "file_name": "images/patch16_Base1_2021_jpg.rf.e23248416757701b4aa39c2313ed0804.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 270,
+      "license": 1,
+      "file_name": "images/patch9_Base8_2021_jpg.rf.bf3dec7828fee7f214d8f016f4a1bc03.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 278,
+      "license": 1,
+      "file_name": "images/patch12_Base12_2021_jpg.rf.cf4a788806b82c43d69370e7ab353dd6.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 282,
+      "license": 1,
+      "file_name": "images/patch12_Base14_2021_jpg.rf.7522410f658e9eac98ffd748f42e8a49.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 287,
+      "license": 1,
+      "file_name": "images/patch17_Base11_2021_jpg.rf.a0ed686c664c4e99e358794122a09dc2.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 295,
+      "license": 1,
+      "file_name": "images/patch6_Base11_2021_jpg.rf.6e5974557701851811d9bed1b3a7ef92.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 296,
+      "license": 1,
+      "file_name": "images/patch4_Base2_2021_jpg.rf.6cbb12a18dec561fb8fdab72436f62bd.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 298,
+      "license": 1,
+      "file_name": "images/patch16_Base6_2021_jpg.rf.5dd4f5070941e1ca2f25001e3b221cdc.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 299,
+      "license": 1,
+      "file_name": "images/patch2_Base7_2021_jpg.rf.c3444e13b63d990507c39cc173722fc7.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 300,
+      "license": 1,
+      "file_name": "images/patch7_Base12_2021_jpg.rf.e9b77ca9c8891beaa16af95936d30b4b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 301,
+      "license": 1,
+      "file_name": "images/patch7_Base8_2021_jpg.rf.d334c9876b90be72d7abe6441db34c75.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 316,
+      "license": 1,
+      "file_name": "images/patch8_Base15_2021_jpg.rf.db5426d5df173205b5f26fd3be20ed5d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 325,
+      "license": 1,
+      "file_name": "images/patch8_Base9_2021_jpg.rf.7f1abb5fa59cf82f362c743649e29343.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 330,
+      "license": 1,
+      "file_name": "images/patch4_Base15_2021_jpg.rf.f7b11b5f655900e09b66289a3cf0b886.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 339,
+      "license": 1,
+      "file_name": "images/patch17_Base6_2021_jpg.rf.af78cb8f51917ac032061c2d94ce0354.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 343,
+      "license": 1,
+      "file_name": "images/patch14_Base12_2021_jpg.rf.15ed95c59762e5a904a231a442ae09db.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 345,
+      "license": 1,
+      "file_name": "images/patch10_Base5_2021_jpg.rf.2db6eaa947962b589044f7712efc4b77.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 353,
+      "license": 1,
+      "file_name": "images/patch5_Base3_2021_jpg.rf.b8d47fb8f258da3f11849a7771f37129.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 359,
+      "license": 1,
+      "file_name": "images/patch3_Base8_2021_jpg.rf.34564ed5b0c1764e65558e0c5011a495.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 363,
+      "license": 1,
+      "file_name": "images/patch8_Base11_2021_jpg.rf.9df10af4419235c55f7500871e132b1d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 364,
+      "license": 1,
+      "file_name": "images/patch17_Base15_2021_jpg.rf.a3070e700a0179694db54dcfda6fc63e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 365,
+      "license": 1,
+      "file_name": "images/patch10_Base4_2021_jpg.rf.744d2112ee00f1185003acfee1a7d92f.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 371,
+      "license": 1,
+      "file_name": "images/patch11_Base12_2021_jpg.rf.e958a5a834fd747f08a28706e10d848c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 375,
+      "license": 1,
+      "file_name": "images/patch13_Base10_2021_jpg.rf.57384dd2fbec405d6478a0e7b364f06b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 391,
+      "license": 1,
+      "file_name": "images/patch1_Base3_2021_jpg.rf.b9a961d76c8ea7f147d1a0b064647bda.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 395,
+      "license": 1,
+      "file_name": "images/patch3_Base11_2021_jpg.rf.ca99a57139d6ba9010a1876283e9297e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 399,
+      "license": 1,
+      "file_name": "images/patch5_Base8_2021_jpg.rf.90aff94ec9146ae08c628b520350ecd6.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 402,
+      "license": 1,
+      "file_name": "images/patch2_Base14_2021_jpg.rf.af2eda47c736b15fce543eb2683a9f23.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 403,
+      "license": 1,
+      "file_name": "images/patch1_Base4_2021_jpg.rf.20938c39d2e17eacd03bb506876fad21.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 418,
+      "license": 1,
+      "file_name": "images/patch17_Base9_2021_jpg.rf.e12b5b27f90e32cfeb3a1eac071ede75.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 419,
+      "license": 1,
+      "file_name": "images/patch12_Base10_2021_jpg.rf.1795541ebbbb197cd7d7614de8fe0a9e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 427,
+      "license": 1,
+      "file_name": "images/patch16_Base5_2021_jpg.rf.ccb369ed2cab77a86c928f2e4eaf5d98.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 430,
+      "license": 1,
+      "file_name": "images/patch4_Base1_2021_jpg.rf.1d931ae226d03628981eda989204bd76.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 437,
+      "license": 1,
+      "file_name": "images/patch5_Base7_2021_jpg.rf.4a9530e3e1c8f33214a34234d742ef24.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 439,
+      "license": 1,
+      "file_name": "images/patch10_Base2_2021_jpg.rf.86c3bc6cc3839274efea789a403e293c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 456,
+      "license": 1,
+      "file_name": "images/patch3_Base13_2021_jpg.rf.8da4777b24fec5a9f6dc633a9798ec35.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 469,
+      "license": 1,
+      "file_name": "images/patch10_Base8_2021_jpg.rf.956f824b8dd0b0dcf942b12b8b8213df.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 472,
+      "license": 1,
+      "file_name": "images/patch5_Base12_2021_jpg.rf.4b669c045364a487cbd8958a163d737f.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 476,
+      "license": 1,
+      "file_name": "images/patch5_Base5_2021_jpg.rf.84074fc87e4e948421b5e78339960eb6.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 477,
+      "license": 1,
+      "file_name": "images/patch17_Base2_2021_jpg.rf.d07ce9ca29b9f0a9d50ef7521c70f69c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 486,
+      "license": 1,
+      "file_name": "images/patch1_Base2_2021_jpg.rf.b02572821935ac8306392e4136ccd4c0.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 489,
+      "license": 1,
+      "file_name": "images/patch13_Base5_2021_jpg.rf.897c38419146729bef41084bb204fefd.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 490,
+      "license": 1,
+      "file_name": "images/patch6_Base3_2021_jpg.rf.b6f896fdd9e6635dcd671855dd1a91af.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 491,
+      "license": 1,
+      "file_name": "images/patch16_Base14_2021_jpg.rf.08dfb3b323ffc6a013376cc4300c509b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 492,
+      "license": 1,
+      "file_name": "images/patch11_Base11_2021_jpg.rf.f94d6d6e73237e5b14d4fa505f6bae02.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 495,
+      "license": 1,
+      "file_name": "images/patch15_Base8_2021_jpg.rf.dea1537d8c1be6d907f406eb3b344a28.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 498,
+      "license": 1,
+      "file_name": "images/patch9_Base6_2021_jpg.rf.5fb057bcf026b334b47c08cd969d49f8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 504,
+      "license": 1,
+      "file_name": "images/patch7_Base4_2021_jpg.rf.bf32f4e478876fa867687d2fdcd44b95.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 512,
+      "license": 1,
+      "file_name": "images/patch17_Base1_2021_jpg.rf.f4cdae444b03ef5e4440dc6d235fc0b5.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 513,
+      "license": 1,
+      "file_name": "images/patch9_Base3_2021_jpg.rf.cb0f6c197cd41f1af60ef4b6605e665d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 521,
+      "license": 1,
+      "file_name": "images/patch6_Base10_2021_jpg.rf.f1e2f4b440d0ea8f23cce8ebb2d4764c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 525,
+      "license": 1,
+      "file_name": "images/patch1_Base1_2021_jpg.rf.d434009492ff5d66211845b81b49dffc.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 534,
+      "license": 1,
+      "file_name": "images/patch16_Base9_2021_jpg.rf.11854352515e00d77c3921e8bb2508ff.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 535,
+      "license": 1,
+      "file_name": "images/patch10_Base13_2021_jpg.rf.7856c335d68ccd97379e44a17ef05537.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 538,
+      "license": 1,
+      "file_name": "images/patch13_Base7_2021_jpg.rf.0ab90f096428f9d592defb8be32e05f8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 550,
+      "license": 1,
+      "file_name": "images/patch4_Base6_2021_jpg.rf.b1bc52c6d8c85d548d3ac37bda435aa3.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 551,
+      "license": 1,
+      "file_name": "images/patch17_Base3_2021_jpg.rf.56b4e5fc527a4f23583bef2d5962887a.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 553,
+      "license": 1,
+      "file_name": "images/patch17_Base5_2021_jpg.rf.4e0b29b2b6aeb16e32e022e5654f515c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch17_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 554,
+      "license": 1,
+      "file_name": "images/patch15_Base7_2021_jpg.rf.508a56ae3eaa2dfcf5d59f62c6fd8dd5.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 558,
+      "license": 1,
+      "file_name": "images/patch3_Base6_2021_jpg.rf.43081096a03e3fbdc1861741aee33e3b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 574,
+      "license": 1,
+      "file_name": "images/patch11_Base15_2021_jpg.rf.c8c98229ae5ece6b703c9e27bedd6003.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 585,
+      "license": 1,
+      "file_name": "images/patch5_Base11_2021_jpg.rf.922af08796fc3ab1a3eb79faeb794c73.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 589,
+      "license": 1,
+      "file_name": "images/patch11_Base5_2021_jpg.rf.f67525d93d48b861dd409fcfc69afccd.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 590,
+      "license": 1,
+      "file_name": "images/patch8_Base13_2021_jpg.rf.1bda98cbc3703099b97ad525c8334bf5.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 592,
+      "license": 1,
+      "file_name": "images/patch15_Base15_2021_jpg.rf.191ac8deef749783dc6f0702a909809c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 596,
+      "license": 1,
+      "file_name": "images/patch10_Base15_2021_jpg.rf.8c6dc2c6000facf54db7e1dfcca2757e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 600,
+      "license": 1,
+      "file_name": "images/patch7_Base7_2021_jpg.rf.8a102138875e14a4e2c85b50030dbad1.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 602,
+      "license": 1,
+      "file_name": "images/patch12_Base13_2021_jpg.rf.105c81611be877255c632f9e68ba7b09.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 603,
+      "license": 1,
+      "file_name": "images/patch4_Base7_2021_jpg.rf.e031fb408718fa9d100710aca8d77ae3.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 605,
+      "license": 1,
+      "file_name": "images/patch13_Base4_2021_jpg.rf.0c430e7e682af33d32684b91450ac011.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 609,
+      "license": 1,
+      "file_name": "images/patch8_Base3_2021_jpg.rf.ccfde990584469ed93c8f4439a084a34.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 611,
+      "license": 1,
+      "file_name": "images/patch9_Base2_2021_jpg.rf.75a3905cb79c7985510d82e23a2efb7b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 615,
+      "license": 1,
+      "file_name": "images/patch7_Base9_2021_jpg.rf.df3705ad112464177fcc2ccb87db2ee7.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 617,
+      "license": 1,
+      "file_name": "images/patch9_Base7_2021_jpg.rf.f69a2ab5b1e8826aece1d08b3d1ba488.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 630,
+      "license": 1,
+      "file_name": "images/patch6_Base8_2021_jpg.rf.67da2c9a8c066a0699a21bcffb5eaf84.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 647,
+      "license": 1,
+      "file_name": "images/patch1_Base12_2021_jpg.rf.27c14df1d0f5f87a3d26d09c705b2978.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 651,
+      "license": 1,
+      "file_name": "images/patch9_Base15_2021_jpg.rf.26d6669c2d75c6329181cf8b3b1de12f.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch9_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 655,
+      "license": 1,
+      "file_name": "images/patch14_Base6_2021_jpg.rf.5613d07ea48db1cd688e00718ecda517.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 667,
+      "license": 1,
+      "file_name": "images/patch15_Base6_2021_jpg.rf.1576338efc8c2dc16d59cb6b40652bc9.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 671,
+      "license": 1,
+      "file_name": "images/patch10_Base3_2021_jpg.rf.6def953dec96072cebd640325a625d7e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 677,
+      "license": 1,
+      "file_name": "images/patch6_Base13_2021_jpg.rf.e1f08c8a14c8197542ee8a689c1a7f49.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 680,
+      "license": 1,
+      "file_name": "images/patch12_Base15_2021_jpg.rf.0444b4e6d34e089c920f16479179ad81.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 681,
+      "license": 1,
+      "file_name": "images/patch5_Base9_2021_jpg.rf.b53e6f948d3f159fa5de53ed1bd795d5.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 692,
+      "license": 1,
+      "file_name": "images/patch10_Base14_2021_jpg.rf.91c3c97751e7049a22640b9974d46c52.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 698,
+      "license": 1,
+      "file_name": "images/patch10_Base11_2021_jpg.rf.f851a29cb80b1aabc08dd9073d48934a.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch10_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 699,
+      "license": 1,
+      "file_name": "images/patch16_Base3_2021_jpg.rf.d3df75635935be682223093f87a46427.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 700,
+      "license": 1,
+      "file_name": "images/patch4_Base14_2021_jpg.rf.d78e76ca5a13fd1fc15939dc165bf1b0.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch4_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 701,
+      "license": 1,
+      "file_name": "images/patch5_Base6_2021_jpg.rf.a407d86f4e26c5651717d1be5cef04ba.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch5_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 702,
+      "license": 1,
+      "file_name": "images/patch3_Base3_2021_jpg.rf.a53660bbd2a54c470bf35c4d12629e51.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 707,
+      "license": 1,
+      "file_name": "images/patch16_Base7_2021_jpg.rf.f26b1343df14bec4cfd3df9ea4319c7e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 718,
+      "license": 1,
+      "file_name": "images/patch12_Base5_2021_jpg.rf.d82fc92b718daa20e5d7ad96b22f0f56.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 721,
+      "license": 1,
+      "file_name": "images/patch2_Base12_2021_jpg.rf.09b0880199e2540ac7cc26885240db25.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 726,
+      "license": 1,
+      "file_name": "images/patch1_Base10_2021_jpg.rf.9fcd71579722a5ae9e1019e17b6e46ef.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 729,
+      "license": 1,
+      "file_name": "images/patch3_Base10_2021_jpg.rf.a36475aa00d0f7a548072639f4d27b46.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 731,
+      "license": 1,
+      "file_name": "images/patch1_Base5_2021_jpg.rf.9ea9beca1cd60358f2441e6cfaf57939.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 735,
+      "license": 1,
+      "file_name": "images/patch1_Base9_2021_jpg.rf.94cf92e12e5c5a0fd4048f5e4dce87e8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 737,
+      "license": 1,
+      "file_name": "images/patch8_Base8_2021_jpg.rf.98b5f16139cdf827363a4247841f1b2d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 743,
+      "license": 1,
+      "file_name": "images/patch8_Base14_2021_jpg.rf.a664662696a787ef71667dcf2faeddf8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 746,
+      "license": 1,
+      "file_name": "images/patch7_Base3_2021_jpg.rf.886afe5d73b17fb2ce058caf27a381c3.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base3_2021.jpg"
+      }
+    },
+    {
+      "id": 759,
+      "license": 1,
+      "file_name": "images/patch13_Base6_2021_jpg.rf.d9c10cdfd8c1d8c2593f072859e0cc72.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 763,
+      "license": 1,
+      "file_name": "images/patch7_Base6_2021_jpg.rf.be0763e541a3401ec2c826eea8f69a1c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch7_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 765,
+      "license": 1,
+      "file_name": "images/patch16_Base11_2021_jpg.rf.0d31af4d491e17c09a263b2c28e30f38.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base11_2021.jpg"
+      }
+    },
+    {
+      "id": 767,
+      "license": 1,
+      "file_name": "images/patch13_Base8_2021_jpg.rf.0b16720d184ddb7f7f3244c352d4f8fc.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 777,
+      "license": 1,
+      "file_name": "images/patch13_Base9_2021_jpg.rf.e6a633af6deae2e5a3a26ec5a035b160.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base9_2021.jpg"
+      }
+    },
+    {
+      "id": 778,
+      "license": 1,
+      "file_name": "images/patch6_Base4_2021_jpg.rf.bf8e0d5de8fccf33c38f7349a7b9d620.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 784,
+      "license": 1,
+      "file_name": "images/patch8_Base6_2021_jpg.rf.32093acdb7b62a088332dad835c6416c.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 793,
+      "license": 1,
+      "file_name": "images/patch2_Base2_2021_jpg.rf.b536114d9f4aa08e72c806448122f1b0.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 798,
+      "license": 1,
+      "file_name": "images/patch2_Base1_2021_jpg.rf.71a9fc324c32e60a59522338fcd1503d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base1_2021.jpg"
+      }
+    },
+    {
+      "id": 806,
+      "license": 1,
+      "file_name": "images/patch13_Base13_2021_jpg.rf.b64427d857dbf0b4d0b464096b60fd53.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch13_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 810,
+      "license": 1,
+      "file_name": "images/patch8_Base2_2021_jpg.rf.0e90ba3867ea4d5a92465cff3d846853.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 815,
+      "license": 1,
+      "file_name": "images/patch16_Base15_2021_jpg.rf.cfea16b088126c6a5443db616de21134.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 816,
+      "license": 1,
+      "file_name": "images/patch16_Base4_2021_jpg.rf.11b88412953b8934f7bfd28fac9a28d2.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base4_2021.jpg"
+      }
+    },
+    {
+      "id": 825,
+      "license": 1,
+      "file_name": "images/patch8_Base12_2021_jpg.rf.0107395c66c6795f71e6fcbc3a6dbd9d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch8_Base12_2021.jpg"
+      }
+    },
+    {
+      "id": 827,
+      "license": 1,
+      "file_name": "images/patch11_Base6_2021_jpg.rf.9c6408baee2b790c1b59d9d32221e24d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 829,
+      "license": 1,
+      "file_name": "images/patch2_Base6_2021_jpg.rf.4f66ba79a7fb47e3dd10d0512649cb5d.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch2_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 831,
+      "license": 1,
+      "file_name": "images/patch15_Base10_2021_jpg.rf.5e6db3db884b964dbdda86a02c1856d8.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base10_2021.jpg"
+      }
+    },
+    {
+      "id": 837,
+      "license": 1,
+      "file_name": "images/patch11_Base7_2021_jpg.rf.5af016d8910da9d6d38af76224f09079.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch11_Base7_2021.jpg"
+      }
+    },
+    {
+      "id": 839,
+      "license": 1,
+      "file_name": "images/patch16_Base8_2021_jpg.rf.99d5edcfab20800ab3cf2934e9880e2e.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch16_Base8_2021.jpg"
+      }
+    },
+    {
+      "id": 840,
+      "license": 1,
+      "file_name": "images/patch3_Base15_2021_jpg.rf.8ef31d48084f6fd377ce7199db37f642.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base15_2021.jpg"
+      }
+    },
+    {
+      "id": 844,
+      "license": 1,
+      "file_name": "images/patch15_Base5_2021_jpg.rf.0429cb65d1dac5940e1c334f06c138ea.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch15_Base5_2021.jpg"
+      }
+    },
+    {
+      "id": 856,
+      "license": 1,
+      "file_name": "images/patch12_Base2_2021_jpg.rf.dcdd4f3a4f5e5670ee951bf60c542aad.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 862,
+      "license": 1,
+      "file_name": "images/patch12_Base6_2021_jpg.rf.9077d5c535fdb032ad160d129842bc45.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch12_Base6_2021.jpg"
+      }
+    },
+    {
+      "id": 863,
+      "license": 1,
+      "file_name": "images/patch6_Base14_2021_jpg.rf.869eedc6f049f5b1c851c1dbdc93ec54.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch6_Base14_2021.jpg"
+      }
+    },
+    {
+      "id": 880,
+      "license": 1,
+      "file_name": "images/patch3_Base2_2021_jpg.rf.ebb220e5876274ec80ee92eb3dd9c805.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch3_Base2_2021.jpg"
+      }
+    },
+    {
+      "id": 883,
+      "license": 1,
+      "file_name": "images/patch1_Base13_2021_jpg.rf.77e1f7a6daa29a0fdc9bbf0fd7238321.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch1_Base13_2021.jpg"
+      }
+    },
+    {
+      "id": 887,
+      "license": 1,
+      "file_name": "images/patch14_Base4_2021_jpg.rf.3825746f5465af7e95e0ae634968b49b.jpg",
+      "height": 432,
+      "width": 432,
+      "date_captured": "2026-09-11T18:37:27+00:00",
+      "extra": {
+        "name": "patch14_Base4_2021.jpg"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": 469,
+      "image_id": 48,
+      "category_id": 1,
+      "bbox": [
+        64.08,
+        141.58,
+        27.66,
+        21.41
+      ],
+      "iscrowd": 0,
+      "area": 592.201,
+      "segmentation": [
+        [
+          65.053,
+          161.612,
+          67.39,
+          162.993,
+          89.399,
+          153.669,
+          90.958,
+          152.288,
+          91.737,
+          146.072,
+          89.399,
+          141.928,
+          87.452,
+          141.583,
+          76.155,
+          146.763,
+          66.611,
+          148.835,
+          64.079,
+          150.906,
+          64.079,
+          155.396,
+          65.053,
+          161.612
+        ]
+      ]
+    },
+    {
+      "id": 2155,
+      "image_id": 300,
+      "category_id": 1,
+      "bbox": [
+        269.56,
+        372.95,
+        14.02,
+        27.97
+      ],
+      "iscrowd": 0,
+      "area": 392.139,
+      "segmentation": [
+        [
+          270.536,
+          400.921,
+          280.664,
+          400.576,
+          282.806,
+          399.194,
+          283.585,
+          384.345,
+          282.222,
+          377.094,
+          274.041,
+          372.95,
+          271.12,
+          375.712,
+          270.341,
+          379.856,
+          269.562,
+          393.669,
+          270.536,
+          400.921
+        ]
+      ]
+    },
+    {
+      "id": 2156,
+      "image_id": 300,
+      "category_id": 1,
+      "bbox": [
+        197.02,
+        37.88,
+        9.44,
+        7.36
+      ],
+      "iscrowd": 0,
+      "area": 69.478,
+      "segmentation": [
+        [
+          206.459,
+          45.241,
+          206.459,
+          37.879,
+          197.019,
+          37.879,
+          197.019,
+          45.241,
+          206.459,
+          45.241
+        ]
+      ]
+    },
+    {
+      "id": 5103,
+      "image_id": 701,
+      "category_id": 1,
+      "bbox": [
+        286.7,
+        164.72,
+        9.93,
+        15.19
+      ],
+      "iscrowd": 0,
+      "area": 150.837,
+      "segmentation": [
+        [
+          288.26,
+          179.914,
+          295.661,
+          176.46,
+          296.635,
+          174.734,
+          296.05,
+          166.791,
+          294.882,
+          164.719,
+          289.818,
+          166.791,
+          286.702,
+          169.554,
+          287.091,
+          178.187,
+          288.26,
+          179.914
+        ]
+      ]
+    },
+    {
+      "id": 5104,
+      "image_id": 701,
+      "category_id": 1,
+      "bbox": [
+        273.65,
+        193.04,
+        8.38,
+        13.81
+      ],
+      "iscrowd": 0,
+      "area": 115.728,
+      "segmentation": [
+        [
+          275.21,
+          206.849,
+          278.911,
+          206.158,
+          281.443,
+          204.432,
+          282.027,
+          203.05,
+          281.248,
+          196.144,
+          279.69,
+          193.036,
+          275.405,
+          194.072,
+          273.652,
+          196.144,
+          274.236,
+          205.122,
+          275.21,
+          206.849
+        ]
+      ]
+    },
+    {
+      "id": 5105,
+      "image_id": 701,
+      "category_id": 1,
+      "bbox": [
+        289.04,
+        180.26,
+        12.27,
+        24.52
+      ],
+      "iscrowd": 0,
+      "area": 300.86,
+      "segmentation": [
+        [
+          291.376,
+          200.633,
+          292.739,
+          204.777,
+          294.687,
+          204.432,
+          301.309,
+          199.597,
+          301.309,
+          195.108,
+          299.167,
+          183.712,
+          297.803,
+          180.259,
+          296.05,
+          180.259,
+          289.234,
+          184.748,
+          289.039,
+          186.82,
+          291.376,
+          200.633
+        ]
+      ]
+    },
+    {
+      "id": 5106,
+      "image_id": 701,
+      "category_id": 1,
+      "bbox": [
+        268.78,
+        218.24,
+        12.85,
+        22.45
+      ],
+      "iscrowd": 0,
+      "area": 288.482,
+      "segmentation": [
+        [
+          271.899,
+          233.784,
+          273.652,
+          240.345,
+          275.6,
+          240.691,
+          281.443,
+          236.892,
+          281.638,
+          233.094,
+          279.495,
+          219.281,
+          278.326,
+          218.245,
+          275.015,
+          218.935,
+          270.341,
+          221.007,
+          268.783,
+          222.734,
+          268.977,
+          228.95,
+          271.899,
+          233.784
+        ]
+      ]
+    },
+    {
+      "id": 5107,
+      "image_id": 701,
+      "category_id": 1,
+      "bbox": [
+        271.7,
+        252.43,
+        14.61,
+        23.48
+      ],
+      "iscrowd": 0,
+      "area": 343.043,
+      "segmentation": [
+        [
+          275.015,
+          275.914,
+          277.742,
+          275.914,
+          286.312,
+          270.388,
+          286.117,
+          264.863,
+          283.001,
+          252.432,
+          279.69,
+          252.432,
+          271.704,
+          257.266,
+          272.094,
+          263.482,
+          275.015,
+          275.914
+        ]
+      ]
+    },
+    {
+      "id": 5497,
+      "image_id": 765,
+      "category_id": 1,
+      "bbox": [
+        15.39,
+        66.3,
+        25.51,
+        66.3
+      ],
+      "iscrowd": 0,
+      "area": 1691.313,
+      "segmentation": [
+        [
+          16.75,
+          82.878,
+          17.14,
+          90.475,
+          18.114,
+          93.583,
+          18.503,
+          98.417,
+          22.399,
+          108.432,
+          24.151,
+          122.245,
+          26.099,
+          131.223,
+          27.268,
+          132.604,
+          32.527,
+          131.223,
+          37.785,
+          128.115,
+          40.512,
+          125.007,
+          40.902,
+          120.863,
+          39.928,
+          112.921,
+          38.954,
+          110.158,
+          38.37,
+          102.216,
+          36.032,
+          91.856,
+          32.137,
+          68.029,
+          30.579,
+          66.302,
+          28.436,
+          66.647,
+          20.451,
+          69.755,
+          15.582,
+          74.245,
+          15.387,
+          79.424,
+          16.75,
+          82.878
+        ]
+      ]
+    },
+    {
+      "id": 5498,
+      "image_id": 765,
+      "category_id": 1,
+      "bbox": [
+        79.08,
+        116.37,
+        26.88,
+        27.97
+      ],
+      "iscrowd": 0,
+      "area": 751.834,
+      "segmentation": [
+        [
+          79.856,
+          141.237,
+          81.609,
+          144.345,
+          103.228,
+          137.439,
+          105.565,
+          135.712,
+          105.955,
+          134.331,
+          105.76,
+          126.388,
+          104.202,
+          116.374,
+          83.167,
+          123.281,
+          79.466,
+          125.353,
+          79.077,
+          131.914,
+          79.856,
+          141.237
+        ]
+      ]
+    }
+  ]
+}

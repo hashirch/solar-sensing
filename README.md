@@ -1,39 +1,89 @@
-# FYP Solar Panel Segmentation Dataset
+# Solar Panel Segmentation
 
-Multi-temporal (2021–2025) solar panel satellite segmentation pipeline, datasets, and Google Colab training notebooks.
+This repository contains a multi-temporal (2021–2025) solar-panel
+segmentation dataset and CNN/U-Net and Mask R-CNN training workflows.
 
 ## Repository Structure
 
 ```text
-├── Dataset/
-│   ├── COCO/                     # COCO format segmentation annotations (2021–2025)
-│   │   ├── 2021 .. 2025/
-│   │   │   ├── train/ (images, _annotations.coco.json)
-│   │   │   ├── valid/
-│   │   │   └── test/
-│   ├── YOLO/                     # YOLO format segmentation labels & images (2021–2025)
-│   │   ├── data.yaml
-│   │   └── 2021 .. 2025/
-│   │       ├── train/ (images, labels)
-│   │       ├── valid/
-│   │       └── test/
-│   └── download_datasets.py      # Dataset sync & download utility
-├── Note books/
-│   ├── cnn.ipynb                 # CNN U-Net (ResNet-34) training notebook
-│   ├── rcnn.ipynb                # Mask R-CNN (Detectron2) training notebook
-│   ├── yolo11.ipynb              # YOLO11m-seg training & temporal analysis
-│   └── test.ipynb                # Unified 3-model side-by-side inference tester
-├── .gitignore
-└── README.md
+data/
+├── COCO/                         # Images and COCO segmentation annotations
+└── download_datasets.py         # COCO dataset download and organization
+frontend/
+├── app.py                       # Legacy Streamlit inference frontend
+└── src/                         # React/Vite workspace UI
+models/                           # Additional model assets
+notebooks/
+├── cnn.ipynb                    # CNN/U-Net notebook
+└── rcnn.ipynb                   # Mask R-CNN notebook
+results/
+├── weights/                     # Trained CNN and Mask R-CNN checkpoints
+└── runs/                        # Generated training/evaluation outputs
+scripts/
+├── train_cnn.py
+├── evaluate_cnn.py
+├── train_mask_rcnn.py
+└── evaluate_mask_rcnn.py
+src/solar_segmentation/
+└── cnn.py                       # Shared CNN dataset/model/training utilities
 ```
 
-## Dataset Usage in Notebooks
+## Install
 
-All notebooks automatically clone and load the dataset directly from this GitHub repository:
 ```bash
-git clone https://github.com/Hinarashid220/FYP.git
+pip install -r requirements-local.txt
 ```
-- **CNN U-Net**: Reads from `FYP/Dataset/YOLO` (or local `Dataset/YOLO`)
-- **Mask R-CNN**: Reads from `FYP/Dataset/COCO` (or local `Dataset/COCO`)
-- **YOLO11m-seg**: Reads from `FYP/Dataset/YOLO` (or local `Dataset/YOLO`)
-- **Test Notebook**: Automatically locates test samples from `FYP/Dataset/YOLO/2025/test/images` or `Dataset/YOLO/2025/test/images`
+
+Detectron2 must be installed in a compatible PyTorch environment for Mask
+R-CNN training, evaluation, and frontend use:
+
+```bash
+python -m pip install --no-build-isolation \
+  'git+https://github.com/facebookresearch/detectron2.git'
+```
+
+## Separate Training and Evaluation
+
+```bash
+python -m scripts.train_cnn
+python -m scripts.evaluate_cnn
+
+python -m scripts.train_mask_rcnn
+python -m scripts.evaluate_mask_rcnn
+```
+
+The default evaluation checkpoints are:
+
+- `results/weights/best_cnn_unet.pth`
+- `results/weights/mask_rcnn_final.pth`
+
+Use `--device cpu` when CUDA is unavailable. For a 6 GB GPU, use a small
+Mask R-CNN batch size:
+
+```bash
+python -m scripts.train_mask_rcnn --batch-size 1 --workers 0
+```
+
+## React Workspace UI
+
+The primary frontend is a React/Vite workspace with responsive upload,
+comparison, and result-preview flows:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`. The client currently runs in preview mode and
+keeps uploaded images local. Set `VITE_API_URL` when connecting it to an
+inference API.
+
+## Legacy Streamlit Inference Frontend
+
+```bash
+streamlit run frontend/app.py
+```
+
+Open the displayed local URL, upload one or more images, and select CNN/U-Net,
+Mask R-CNN, or both. Each result includes an expandable full-size view.
