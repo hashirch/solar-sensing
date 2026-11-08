@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import cv2
@@ -10,11 +11,14 @@ import streamlit as st
 import torch
 from PIL import Image
 
+from otp_service import OTPChallenge, otp_service
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CNN_WEIGHTS = ROOT / "results/weights/best_cnn_unet.pth"
 RCNN_WEIGHTS = ROOT / "results/weights/mask_rcnn_final.pth"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+OTP_REQUIRED = os.getenv("SOLARSIGHT_OTP_REQUIRED", "").lower() == "true"
 
 
 st.set_page_config(
@@ -23,6 +27,77 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+
+def require_email_verification() -> None:
+    """Gate the local workspace with a visible two-step email login."""
+    if not OTP_REQUIRED:
+        return
+
+    challenge: OTPChallenge | None = st.session_state.get("otp_challenge")
+    verified_email = st.session_state.get("verified_email")
+    if verified_email:
+        with st.sidebar:
+            st.success(f"Verified: {verified_email}")
+            if st.button("Sign out", key="otp_sign_out"):
+                st.session_state.pop("verified_email", None)
+                st.session_state.pop("otp_challenge", None)
+                st.session_state.pop("otp_challenge_email", None)
+                st.rerun()
+        return
+
+    st.markdown(
+        '<div class="login-shell"><div class="login-card">'
+        '<div class="eyebrow">SolarSight · Secure access</div>'
+        '<h1 class="login-title">Welcome back.</h1>'
+        '<p class="login-copy">Verify your email to open the local segmentation workspace.</p>',
+        unsafe_allow_html=True,
+    )
+    email = st.text_input(
+        "Email address",
+        value="hinarashid431@gmail.com",
+        key="otp_email",
+        disabled=challenge is not None,
+    )
+    if challenge is None:
+        if st.button("Continue with email", type="primary"):
+            if "@" not in email or "." not in email.rsplit("@", 1)[-1]:
+                st.error("Enter a valid email address.")
+            elif otp_service.send_verification_email(
+                "SolarSight user", email, (new := otp_service.create_challenge()).code
+            ):
+                st.session_state.otp_challenge = new
+                st.session_state.otp_challenge_email = email.strip().lower()
+                st.rerun()
+            else:
+                st.error("Email delivery is unavailable. Check SMTP settings.")
+        st.markdown("</div></div>", unsafe_allow_html=True)
+        st.stop()
+
+    challenge_email = st.session_state.otp_challenge_email
+    st.caption(f"Code sent to {challenge_email}")
+    code = st.text_input("Verification code", max_chars=6, key="otp_code")
+    if st.button("Verify and open workspace", type="primary"):
+        if otp_service.verify(challenge, code):
+            st.session_state.verified_email = challenge_email
+            st.session_state.pop("otp_challenge", None)
+            st.session_state.pop("otp_challenge_email", None)
+            st.session_state.pop("otp_code", None)
+            st.rerun()
+        st.error("That code is invalid or expired.")
+
+    if st.button("Resend code"):
+        new_challenge = otp_service.create_challenge()
+        if otp_service.send_resend_email("SolarSight user", challenge_email, new_challenge.code):
+            st.session_state.otp_challenge = new_challenge
+            st.session_state.otp_challenge_email = challenge_email
+            st.rerun()
+        st.error("Email delivery is unavailable. Check SMTP settings.")
+    st.markdown("</div></div>", unsafe_allow_html=True)
+    st.stop()
+
+
+require_email_verification()
 
 st.markdown(
     """
@@ -75,6 +150,10 @@ st.markdown(
     .hero-copy { max-width: 720px; margin-bottom: 2.5rem; }
     .hero-copy p { color: var(--muted); font-size: 1.05rem; line-height: 1.65; max-width: 610px; }
     .accent { color: var(--leaf); }
+    .login-shell { max-width: 540px; margin: 8vh auto 0; }
+    .login-card { background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 35px rgba(20, 63, 49, .06); }
+    .login-title { margin: .4rem 0 .7rem; font-size: clamp(2.2rem, 5vw, 3.8rem); }
+    .login-copy { color: var(--muted); margin: 0 0 1.5rem; }
 
     .stat-card, .model-card, .result-card, .upload-panel {
         background: var(--white); border: 1px solid var(--line); border-radius: 20px;

@@ -87,3 +87,22 @@ streamlit run frontend/app.py
 
 Open the displayed local URL, upload one or more images, and select CNN/U-Net,
 Mask R-CNN, or both. Each result includes an expandable full-size view.
+
+### Optional email OTP gate
+
+The Streamlit app includes the email OTP flow adapted from the
+`ovula-pcos-tracker-FYP-Project` authentication module. It is disabled by
+default so local inference remains unchanged. Enable it with
+`SOLARSIGHT_OTP_REQUIRED=true` and configure SMTP credentials:
+
+```bash
+export SOLARSIGHT_OTP_REQUIRED=true
+export SMTP_USERNAME=your-smtp-user
+export SMTP_PASSWORD=your-smtp-password
+export FROM_EMAIL=your-sender@example.com
+streamlit run frontend/app.py
+```
+
+Codes are six hexadecimal characters, expire after five minutes by default,
+and are compared using a constant-time check. Set `OTP_EXPIRY_MINUTES` to
+change the expiry window. Never commit SMTP credentials.
