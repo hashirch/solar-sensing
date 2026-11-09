@@ -3,31 +3,28 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-VENV_DIR="${ROOT_DIR}/.venv"
-PYTHON="${VENV_DIR}/bin/python"
-PIP=("${PYTHON}" -m pip)
 
 if ! command -v python3 >/dev/null 2>&1; then
     echo "Error: python3 is required but was not found." >&2
     exit 1
 fi
 
-if [[ ! -x "${PYTHON}" ]]; then
-    echo "Creating virtual environment..."
-    python3 -m venv "${VENV_DIR}"
+if ! python3 -m pip --version >/dev/null 2>&1; then
+    echo "Error: pip for python3 is required but was not found." >&2
+    exit 1
 fi
 
 echo "Installing project requirements..."
-"${PIP[@]}" install --upgrade pip
-"${PIP[@]}" install -r "${ROOT_DIR}/requirements-local.txt"
+python3 -m pip install --upgrade pip
+python3 -m pip install -r "${ROOT_DIR}/requirements-local.txt"
 
-if ! "${PYTHON}" -c "import torch" >/dev/null 2>&1; then
+if ! python3 -c "import torch" >/dev/null 2>&1; then
     echo "PyTorch is missing; installing PyTorch and torchvision..."
-    "${PIP[@]}" install torch torchvision
+    python3 -m pip install torch torchvision
 fi
 
-if ! "${PYTHON}" -c "import detectron2" >/dev/null 2>&1; then
+if ! python3 -c "import detectron2" >/dev/null 2>&1; then
     echo "Detectron2 is missing; installing Detectron2..."
-    "${PIP[@]}" install --no-build-isolation \
+    python3 -m pip install --no-build-isolation \
         "git+https://github.com/facebookresearch/detectron2.git"
 fi

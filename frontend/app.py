@@ -11,6 +11,7 @@ import streamlit as st
 import torch
 from PIL import Image
 
+from frontend.cnn_model import build_model, build_transforms
 from otp_service import OTPChallenge, otp_service
 
 
@@ -89,8 +90,6 @@ require_email_verification()
 
 @st.cache_resource
 def load_cnn():
-    from src.solar_segmentation.cnn import build_model, build_transforms
-
     model = build_model(None).to(DEVICE)
     model.load_state_dict(
         torch.load(CNN_WEIGHTS, map_location=DEVICE, weights_only=True)

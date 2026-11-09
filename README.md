@@ -71,7 +71,7 @@ inference API.
 
 ## Legacy Streamlit Inference Frontend
 
-Install the frontend dependencies into `.venv`:
+Install the frontend dependencies into the system Python environment:
 
 ```bash
 ./install.sh

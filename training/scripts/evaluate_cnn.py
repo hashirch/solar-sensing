@@ -7,7 +7,7 @@ from pathlib import Path
 
 import torch
 
-from src.solar_segmentation.cnn import (
+from frontend.cnn_model import (
     YEARS,
     SolarCNNDataset,
     build_model,
