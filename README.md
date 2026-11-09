@@ -81,6 +81,21 @@ inference API.
 
 ## Legacy Streamlit Inference Frontend
 
+The convenience script checks the local environment, installs missing
+dependencies into `.venv`, and starts the frontend:
+
+```bash
+./run.sh
+```
+
+You can pass Streamlit options through to the script, for example:
+
+```bash
+./run.sh --server.port 8501
+```
+
+To start it manually instead:
+
 ```bash
 streamlit run frontend/app.py
 ```
