@@ -6,26 +6,16 @@ segmentation dataset and CNN/U-Net and Mask R-CNN training workflows.
 ## Repository Structure
 
 ```text
-data/
-├── COCO/                         # Images and COCO segmentation annotations
-└── download_datasets.py         # COCO dataset download and organization
+training/
+├── data/                         # Datasets used during training/evaluation
+├── models/                       # Training-only model assets
+├── notebooks/                    # CNN/U-Net and Mask R-CNN notebooks
+├── results/                      # Training outputs and archives
+└── scripts/                     # Training and evaluation scripts
 frontend/
 ├── app.py                       # Legacy Streamlit inference frontend
+├── models/                      # Checkpoints required by the frontend
 └── src/                         # React/Vite workspace UI
-models/                           # Additional model assets
-notebooks/
-├── cnn.ipynb                    # CNN/U-Net notebook
-└── rcnn.ipynb                   # Mask R-CNN notebook
-results/
-├── weights/                     # Trained CNN and Mask R-CNN checkpoints
-└── runs/                        # Generated training/evaluation outputs
-scripts/
-├── train_cnn.py
-├── evaluate_cnn.py
-├── train_mask_rcnn.py
-└── evaluate_mask_rcnn.py
-src/solar_segmentation/
-└── cnn.py                       # Shared CNN dataset/model/training utilities
 ```
 
 ## Install
@@ -45,23 +35,23 @@ python -m pip install --no-build-isolation \
 ## Separate Training and Evaluation
 
 ```bash
-python -m scripts.train_cnn
-python -m scripts.evaluate_cnn
+python -m training.scripts.train_cnn
+python -m training.scripts.evaluate_cnn
 
-python -m scripts.train_mask_rcnn
-python -m scripts.evaluate_mask_rcnn
+python -m training.scripts.train_mask_rcnn
+python -m training.scripts.evaluate_mask_rcnn
 ```
 
 The default evaluation checkpoints are:
 
-- `results/weights/best_cnn_unet.pth`
-- `results/weights/mask_rcnn_final.pth`
+- `frontend/models/best_cnn_unet.pth`
+- `frontend/models/mask_rcnn_final.pth`
 
 Use `--device cpu` when CUDA is unavailable. For a 6 GB GPU, use a small
 Mask R-CNN batch size:
 
 ```bash
-python -m scripts.train_mask_rcnn --batch-size 1 --workers 0
+python -m training.scripts.train_mask_rcnn --batch-size 1 --workers 0
 ```
 
 ## React Workspace UI
@@ -81,8 +71,13 @@ inference API.
 
 ## Legacy Streamlit Inference Frontend
 
-The convenience script checks the local environment, installs missing
-dependencies into `.venv`, and starts the frontend:
+Install the frontend dependencies into `.venv`:
+
+```bash
+./install.sh
+```
+
+After installation, start the frontend with:
 
 ```bash
 ./run.sh

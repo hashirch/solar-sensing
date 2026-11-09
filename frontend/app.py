@@ -14,9 +14,9 @@ from PIL import Image
 from otp_service import OTPChallenge, otp_service
 
 
-ROOT = Path(__file__).resolve().parents[1]
-CNN_WEIGHTS = ROOT / "results/weights/best_cnn_unet.pth"
-RCNN_WEIGHTS = ROOT / "results/weights/mask_rcnn_final.pth"
+FRONTEND_ROOT = Path(__file__).resolve().parent
+CNN_WEIGHTS = FRONTEND_ROOT / "models/best_cnn_unet.pth"
+RCNN_WEIGHTS = FRONTEND_ROOT / "models/mask_rcnn_final.pth"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 OTP_REQUIRED = os.getenv("SOLARSIGHT_OTP_REQUIRED", "").lower() == "true"
 

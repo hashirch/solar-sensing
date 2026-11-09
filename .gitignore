@@ -12,6 +12,7 @@ Dataset/*.zip
 # Training outputs & checkpoints
 runs/
 Training results/mask-rcnn-results.zip
+training/results/runs/
 *.onnx
 
 # Python cache
@@ -28,6 +29,5 @@ frontend/node_modules/
 frontend/dist/
 
 # Generated local outputs
-results/runs/
-data/exports/
+training/data/exports/
 __pycache__/
