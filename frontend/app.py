@@ -22,7 +22,7 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 OTP_REQUIRED = os.getenv("SOLARSIGHT_OTP_REQUIRED", "").lower() == "true"
 
 
-st.set_page_config(page_title="SolarSight", layout="wide")
+st.set_page_config(page_title="Solar Sensing", layout="wide")
 
 
 def require_email_verification() -> None:
@@ -42,11 +42,11 @@ def require_email_verification() -> None:
                 st.rerun()
         return
 
-    st.title("SolarSight")
+    st.title("Solar Sensing")
     st.caption("Verify your email to open the local segmentation workspace.")
     email = st.text_input(
         "Email address",
-        value="hinarashid431@gmail.com",
+        value="solarsensing@gmail.com",
         key="otp_email",
         disabled=challenge is not None,
     )
@@ -55,7 +55,7 @@ def require_email_verification() -> None:
             if "@" not in email or "." not in email.rsplit("@", 1)[-1]:
                 st.error("Enter a valid email address.")
             elif otp_service.send_verification_email(
-                "SolarSight user", email, (new := otp_service.create_challenge()).code
+                "Solar Sensing user", email, (new := otp_service.create_challenge()).code
             ):
                 st.session_state.otp_challenge = new
                 st.session_state.otp_challenge_email = email.strip().lower()
@@ -66,7 +66,12 @@ def require_email_verification() -> None:
 
     challenge_email = st.session_state.otp_challenge_email
     st.caption(f"Code sent to {challenge_email}")
-    code = st.text_input("Verification code", max_chars=6, key="otp_code")
+    code = st.text_input(
+        "Verification code",
+        max_chars=6,
+        key="otp_code",
+        placeholder="6 digits",
+    )
     if st.button("Verify and open workspace", type="primary"):
         if otp_service.verify(challenge, code):
             st.session_state.verified_email = challenge_email
@@ -78,7 +83,7 @@ def require_email_verification() -> None:
 
     if st.button("Resend code"):
         new_challenge = otp_service.create_challenge()
-        if otp_service.send_resend_email("SolarSight user", challenge_email, new_challenge.code):
+        if otp_service.send_resend_email("Solar Sensing user", challenge_email, new_challenge.code):
             st.session_state.otp_challenge = new_challenge
             st.session_state.otp_challenge_email = challenge_email
             st.rerun()

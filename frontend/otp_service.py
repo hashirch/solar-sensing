@@ -1,4 +1,4 @@
-"""Email OTP generation and delivery for the optional SolarSight access gate."""
+"""Email OTP generation and delivery for the optional Solar Sensing access gate."""
 
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ class OTPService:
     """Generate short-lived email OTPs and send verification messages."""
 
     def __init__(self) -> None:
-        self.app_name = os.getenv("APP_NAME", "SolarSight")
+        self.app_name = os.getenv("APP_NAME", "Solar Sensing")
         self.smtp_server = os.getenv("SMTP_SERVER", "smtp.gmail.com")
         self.smtp_port = int(os.getenv("SMTP_PORT", "587"))
         self.smtp_username = os.getenv("SMTP_USERNAME", "")
@@ -37,8 +37,8 @@ class OTPService:
 
     @staticmethod
     def generate_otp() -> str:
-        """Return a six-character hexadecimal code, matching the source flow."""
-        return secrets.token_hex(3)
+        """Return a cryptographically secure six-digit numeric code."""
+        return f"{secrets.randbelow(1_000_000):06d}"
 
     def create_challenge(self) -> OTPChallenge:
         return OTPChallenge(
@@ -106,6 +106,7 @@ class OTPService:
         return (
             not self.is_otp_expired(challenge.expires_at)
             and len(normalized) == 6
+            and normalized.isdecimal()
             and secrets.compare_digest(challenge.code, normalized)
         )
 

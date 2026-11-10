@@ -9,31 +9,32 @@ class OTPServiceTests(unittest.TestCase):
     def setUp(self):
         self.service = OTPService()
 
-    def test_challenge_has_six_character_code_and_expiry(self):
+    def test_challenge_has_six_digit_code_and_expiry(self):
         challenge = self.service.create_challenge()
         self.assertEqual(len(challenge.code), 6)
+        self.assertTrue(challenge.code.isdecimal())
         self.assertFalse(self.service.is_otp_expired(challenge.expires_at))
 
     def test_verify_accepts_normalized_code(self):
         challenge = OTPChallenge(
-            code="a1b2c3",
+            code="012345",
             expires_at=datetime.now(timezone.utc) + timedelta(minutes=5),
         )
-        self.assertTrue(self.service.verify(challenge, " A1B2C3 "))
+        self.assertTrue(self.service.verify(challenge, " 012345 "))
 
     def test_verify_rejects_expired_or_invalid_code(self):
         expired = OTPChallenge(
-            code="a1b2c3",
+            code="012345",
             expires_at=datetime.now(timezone.utc) - timedelta(seconds=1),
         )
-        self.assertFalse(self.service.verify(expired, "a1b2c3"))
+        self.assertFalse(self.service.verify(expired, "012345"))
         self.assertFalse(
             self.service.verify(
                 OTPChallenge(
-                    code="a1b2c3",
+                    code="012345",
                     expires_at=datetime.now(timezone.utc) + timedelta(minutes=5),
                 ),
-                "wrong!",
+                "12a345",
             )
         )
 
