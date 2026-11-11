@@ -7,7 +7,7 @@ from pathlib import Path
 
 import torch
 
-from frontend.cnn_model import (
+from backend.cnn_model import (
     YEARS,
     SolarCNNDataset,
     build_model,
@@ -25,7 +25,7 @@ def main() -> None:
     parser.add_argument(
         "--weights",
         type=Path,
-        default=Path("frontend/models/best_cnn_unet.pth"),
+        default=Path("backend/models/best_cnn_unet.pth"),
     )
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--workers", type=int, default=0)

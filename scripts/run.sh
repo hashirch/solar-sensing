@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 FRONTEND_DIR="${ROOT_DIR}/frontend"
 
 echo "=========================================="
@@ -34,7 +34,7 @@ fi
 # Start PyTorch model server on port 8000 if not already running
 if ! lsof -i :8000 >/dev/null 2>&1; then
     echo "Starting PyTorch Model Inference Server (port 8000)..."
-    python3 "${ROOT_DIR}/server.py" &
+    (cd "${ROOT_DIR}" && python3 -m backend.server) &
     SERVER_PID=$!
     trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
     sleep 2

@@ -37,3 +37,12 @@ __pycache__/
 
 # Local database
 data/
+
+# Build artefacts
+frontend/*.tsbuildinfo
+*.tsbuildinfo
+
+# Local archives
+hina.zip
+frontend/vite.config.js
+frontend/vite.config.d.ts

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
 
 import cv2
@@ -11,13 +12,15 @@ import streamlit as st
 import torch
 from PIL import Image
 
-from frontend.cnn_model import build_model, build_transforms
-from otp_service import OTPChallenge, otp_service
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from backend.cnn_model import build_model, build_transforms
+from backend.otp_service import OTPChallenge, otp_service
 
 
-FRONTEND_ROOT = Path(__file__).resolve().parent
-CNN_WEIGHTS = FRONTEND_ROOT / "models/best_cnn_unet.pth"
-RCNN_WEIGHTS = FRONTEND_ROOT / "models/mask_rcnn_final.pth"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+CNN_WEIGHTS = ROOT_DIR / "backend/models/best_cnn_unet.pth"
+RCNN_WEIGHTS = ROOT_DIR / "backend/models/mask_rcnn_final.pth"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 OTP_REQUIRED = os.getenv("SOLARSIGHT_OTP_REQUIRED", "").lower() == "true"
 

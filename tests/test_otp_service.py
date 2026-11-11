@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
-from otp_service import OTPChallenge, OTPService
+from backend.otp_service import OTPChallenge, OTPService
 
 
 class OTPServiceTests(unittest.TestCase):
@@ -38,7 +38,7 @@ class OTPServiceTests(unittest.TestCase):
             )
         )
 
-    @patch("otp_service.smtplib.SMTP")
+    @patch("backend.otp_service.smtplib.SMTP")
     def test_send_email_returns_false_without_credentials(self, smtp):
         with patch.dict(
             "os.environ",

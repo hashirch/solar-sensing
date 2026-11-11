@@ -23,7 +23,7 @@ def main() -> None:
     parser.add_argument(
         "--weights",
         type=Path,
-        default=Path("frontend/models/mask_rcnn_final.pth"),
+        default=Path("backend/models/mask_rcnn_final.pth"),
     )
     parser.add_argument(
         "--output-dir",

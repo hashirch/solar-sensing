@@ -5,6 +5,7 @@ import io
 import json
 import hashlib
 import logging
+import re
 import secrets
 import time
 from datetime import datetime, timezone
@@ -16,15 +17,15 @@ import numpy as np
 import torch
 from PIL import Image
 
-import db
-from frontend.cnn_model import build_model, build_transforms
-from frontend.otp_service import otp_service
+from backend import db
+from backend.cnn_model import build_model, build_transforms
+from backend.otp_service import otp_service
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-ROOT_DIR = Path(__file__).resolve().parent
-CNN_WEIGHTS = ROOT_DIR / "frontend/models/best_cnn_unet.pth"
-RCNN_WEIGHTS = ROOT_DIR / "frontend/models/mask_rcnn_final.pth"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+CNN_WEIGHTS = ROOT_DIR / "backend/models/best_cnn_unet.pth"
+RCNN_WEIGHTS = ROOT_DIR / "backend/models/mask_rcnn_final.pth"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Global model references
@@ -233,8 +234,11 @@ _login_fails: dict = {}  # email -> [timestamps of failed password attempts]
 _DUMMY_HASH = db.hash_password("not-a-real-password")  # keeps timing equal for unknown emails
 
 
+_EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]{2,}$")
+
+
 def _valid_email(email: str) -> bool:
-    return "@" in email and "." in email.split("@")[-1] and len(email) <= 254
+    return len(email) <= 254 and bool(_EMAIL_RE.match(email))
 
 
 def _sha(code: str) -> str:
@@ -256,7 +260,8 @@ def _send_code(email: str, name: str, enforce_cooldown: bool = False, key: str =
         "sent": time.time(),
     }
     if otp_service.smtp_username and otp_service.smtp_password:
-        if not otp_service.send_verification_email(name, email, challenge.code):
+        purpose = "password" if key.startswith("pwchange:") else "verify"
+        if not otp_service.send_verification_email(name, email, challenge.code, purpose):
             _otp_challenges.pop(key, None)
             return 502, {"success": False, "error": "Could not send the verification email."}
     else:

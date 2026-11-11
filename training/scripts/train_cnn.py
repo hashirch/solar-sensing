@@ -7,7 +7,7 @@ from pathlib import Path
 
 import torch
 
-from frontend.cnn_model import (
+from backend.cnn_model import (
     YEARS,
     SolarCNNDataset,
     build_model,

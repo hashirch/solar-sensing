@@ -1,6 +1,6 @@
 """SQLite persistence for Solar Sensing: user profiles, sessions and analysis history.
 
-Uses only the standard library. The database file lives in ./data/solar_sensing.db
+Uses only the standard library. The database file lives in <repo>/data/solar_sensing.db
 (override with the SOLAR_DB_PATH environment variable).
 """
 
@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Any, Iterator, Optional
 
 DB_PATH = Path(
-    os.getenv("SOLAR_DB_PATH", Path(__file__).resolve().parent / "data" / "solar_sensing.db")
+    os.getenv("SOLAR_DB_PATH", Path(__file__).resolve().parent.parent / "data" / "solar_sensing.db")
 )
 SESSION_TTL_S = 8 * 3600
 
